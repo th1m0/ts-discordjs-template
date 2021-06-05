@@ -4,8 +4,12 @@
   "description": "Template for Discord.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+		"compile": "tsc -p ./",
+		"compile-watch": "tsc --watch -p ./",
+		"postinstall": "npm run compile",
+		"start": "rm -rf dist/ && npm install && node dist/app.js",
+		"test": "npm run compile && npm start"
+	},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/th1m0/ts-discordjs-template.git"
