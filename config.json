@@ -1,0 +1,7 @@
+{
+	"bot": {
+		"name": "NAME",
+		"activity": "ACTIVITY",
+		"prefix": "!"
+	}
+}
